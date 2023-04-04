@@ -201,8 +201,7 @@ function App() {
 
   let convertCurrency = () => {
     //Create References
-    //document.querySelector('#amount').value;
-    const amount = intValue;
+    const amount = document.querySelector('#amount').value;
     const fromCurrency = fromDropDown.value;
     const toCurrency = toDropDown.value;
     // If amounth input field is not empty
@@ -224,7 +223,7 @@ function App() {
           <h1 className="app-title">currency converter</h1>
         </div>
         <label htmlFor="amount">Amount:</label>
-        <input type="number" id="amount" value={intValue} onChange={e => setIntValue(e.target.value)} />
+        <input type="number" id="amount" value={intValue}onChange={e => setIntValue(e.target.value)} ></input>
 
         <div className="dropdowns">
           <select id="from-currency-select" value={entryCurrency} onChange={e => setEntryCurrency(e.target.value)} >

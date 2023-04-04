@@ -201,12 +201,11 @@ function App() {
 
   let convertCurrency = () => {
     //Create References
-    //document.querySelector('#amount').value;
-    const amount = intValue;
+    const amount = document.querySelector('#amount').value;
     const fromCurrency = fromDropDown.value;
     const toCurrency = toDropDown.value;
     // If amounth input field is not empty
-    if (amount.length != 0) {
+    if (amount.length  0) {
       let fromExchangeRate = data.conversion_rates[fromCurrency];
       let toExchangeRate = data.conversion_rates[toCurrency];
       const convertedAmount = (amount / fromExchangeRate) * toExchangeRate;

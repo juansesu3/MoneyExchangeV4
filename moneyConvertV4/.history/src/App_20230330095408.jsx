@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -201,8 +202,7 @@ function App() {
 
   let convertCurrency = () => {
     //Create References
-    //document.querySelector('#amount').value;
-    const amount = intValue;
+    const amount = document.querySelector('#amount').value;
     const fromCurrency = fromDropDown.value;
     const toCurrency = toDropDown.value;
     // If amounth input field is not empty
